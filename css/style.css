@@ -1,22 +1,32 @@
+/* Sets the background color of the entire body of the webpage to a beige color */
 body{
     background-color: beige;
 }
 
+/*  Makes the font bolder, Sets the font size to 30 pixels */
 #imageTitle{
     font-weight: bolder;
     font-size: 30px;
 }
 
+/* Centers the text alignment for any element with the ID 'gallery' and all <h1> elements */
 #gallery, h1{
     text-align: center;
 }
 
+/* Styles <img> elements within <figure> elements:*/
 figure img {
     max-width: 600px; 
     height: auto;
     margin-bottom: 20px; /* Space between the main image and thumbnails */
 }
 
+/* Styles the element with the ID 'thumbnails':
+   - Uses Flexbox for layout
+   - Centers children horizontally
+   - Sets children in a row
+   - Removes list styling and padding
+   - Adds a 20px margin above the element */
 #thumbnails {
     display: flex;
     justify-content: center; 
@@ -26,10 +36,17 @@ figure img {
     margin-top: 20px;
 }
 
+/* Styles <li> elements within the #thumbnails element:
+   - Sets horizontal margin to 10 pixels on both sides */
 #thumbnails li {
     margin: 0 10px; /* Space between thumbnails */
 }
 
+/* Styles <img> elements within the #thumbnails element:
+   - Changes cursor to pointer on hover
+   - transition effect for opacity changes over 0.3 seconds
+   - Sets the default opacity to 0.6
+   - Sets the width to 100 pixels and height adjusts automatically */
 #thumbnails img {
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -38,6 +55,7 @@ figure img {
     height: auto;
 }
 
+/* Increases the opacity to 1 (fully opaque) when hovering over */
 #thumbnails img:hover {
     opacity: 1;
 }

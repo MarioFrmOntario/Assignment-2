@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  
     <meta charset="utf-8">
+   
     <title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- Main heading for the webpage -->
     <h1>Flower Image Gallery</h1>
+
+    <!-- Section element for the image gallery -->
     <section id="gallery">
-		<ul id="thumbnails">
-            <!-- Thumbnails are added here dynamically -->
+        <!-- Unordered list to hold thumbnails, currently empty and will be populated dynamically -->
+        <ul id="thumbnails">
+            <!-- Thumbnails added here  -->
         </ul>
+
+        <!-- Figure element containing an image and its caption -->
         <figure>
-			<figcaption id="imageTitle">Purple Flowers</figcaption>
+            <!-- Caption for the image -->
+            <figcaption id="imageTitle">Purple Flowers</figcaption>
+            <!-- The main featured image with its source, alternative text, and dimensions -->
             <img id="featuredImage" src="images/flowers-purple-large.jpg" alt="Purple Flowers" width="1200" height="800" />
-        
         </figure>
-        
     </section>
+
+    <!-- Link to  JS file -->
     <script src="js/gallery.js"></script>
+
 	<!-- PHOTO CREDITS
 	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
 	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
